@@ -313,6 +313,7 @@ export class GDBDebugSession extends LoggingDebugSession {
         response.body.supportsDisassembleRequest = true;
         response.body.supportsReadMemoryRequest = true;
         response.body.supportsWriteMemoryRequest = true;
+        response.body.supportsTerminateRequest = true;
         this.sendResponse(response);
     }
 
